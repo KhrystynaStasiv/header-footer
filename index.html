@@ -48,11 +48,17 @@
                   ></use>
                 </svg>
               </div>
+
               /*-----------Mobile menu-------------------*/
+
               <div class="tronix-menu-wrapper tronix-body-visible">
                 <div class="tronix-menu-area text-center">
                   <button class="tronix-menu-toggle">
-                    <i class="bi bi-x-lg"></i>
+                    <i class="bi bi-x-lg"
+                      ><svg class="icon-close">
+                        <use href="./symbol-defs.svg#icon-cross"></use>
+                      </svg>
+                    </i>
                   </button>
                   <div class="mobile-logo">
                     <a
@@ -64,14 +70,14 @@
                       <img
                         fetchpriority="high"
                         decoding="async"
-                        width="1418"
-                        height="256"
+                        width="308"
+                        height="56"
                         src="https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name.png"
                         data-src="https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name.png"
-                        class="custom-logo ls-is-cached lazyloaded"
+                        class="custom-logo lazyloaded"
                         alt="InfraJump"
                         data-srcset="https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name.png 1418w, https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name-300x54.png 300w, https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name-1024x185.png 1024w, https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name-768x139.png 768w"
-                        sizes="(max-width: 1418px) 100vw, 1418px"
+                        sizes="(max-width: 308px) 100vw, 1418px"
                         srcset="
                           https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name.png          1418w,
                           https://infrajump.com/wp-content/uploads/2023/06/cropped-Logo_Name-300x54.png    300w,
@@ -99,21 +105,27 @@
                     </a>
                   </div>
                   <div class="tronix-mobile-menu">
-                    <ul id="mainmenu" class="">
+                    <ul
+                      id="mainmenu"
+                      class="mobile-menu-list tronix-mobile-menu"
+                    >
                       <li
                         id="menu-item-1311"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311 no-mega tronix-item-has-children"
                       >
-                        <a href="#"
-                          >Services<span class="tronix-mean-expand"></span
+                        <a href="#" class="mobile-menu-link menu-plus-expand"
+                          >Services<span class="tronix-mean-expand"
+                            ><svg class="icon-plus">
+                              <use
+                                href="./symbol-defs.svg#icon-plus"
+                              ></use></svg></span
                         ></a>
-                        <ul
-                          class="sub-menu tronix-submenu"
-                          style="display: none"
-                        >
+
+                        <ul class="sub-menu tronix-submenu">
+                          >
                           <li
                             id="menu-item-972"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"
+                            class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-972"
                           >
                             <a
                               href="https://infrajump.com/cloud-migration-services/"
@@ -122,7 +134,7 @@
                           </li>
                           <li
                             id="menu-item-1349"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"
+                            class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"
                           >
                             <a href="https://infrajump.com/devops-as-a-service/"
                               >DevOps as a Service</a
@@ -130,7 +142,7 @@
                           </li>
                           <li
                             id="menu-item-1350"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1350"
+                            class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1350"
                           >
                             <a
                               href="https://infrajump.com/infrastructure-as-code/"
@@ -139,7 +151,7 @@
                           </li>
                           <li
                             id="menu-item-1351"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"
+                            class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"
                           >
                             <a
                               href="https://infrajump.com/ci-cd-implementation/"
@@ -152,19 +164,31 @@
                         id="menu-item-5457"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5457"
                       >
-                        <a href="https://infrajump.com/blog/">Blog</a>
+                        <a
+                          href="https://infrajump.com/blog/"
+                          class="mobile-menu-link"
+                          >Blog</a
+                        >
                       </li>
                       <li
                         id="menu-item-903"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-903"
                       >
-                        <a href="https://infrajump.com/about/">About</a>
+                        <a
+                          href="https://infrajump.com/about/"
+                          class="mobile-menu-link"
+                          >About</a
+                        >
                       </li>
                       <li
                         id="menu-item-1023"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1023"
                       >
-                        <a href="https://infrajump.com/contact/">Contact</a>
+                        <a
+                          href="https://infrajump.com/contact/"
+                          class="mobile-menu-link"
+                          >Contact</a
+                        >
                       </li>
                     </ul>
                   </div>
