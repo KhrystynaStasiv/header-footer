@@ -35,12 +35,79 @@ body {
   color: #ffffff;
   background: #ffffff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   max-width: 420px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
 }
+/*-------------Header--------------*/
+
+.page-header {
+  padding: 0 10px;
+}
+.menu-area {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 305px;
+  max-width: 305px;
+  height: 55px;
+}
+.burger-menu {
+  width: 50px;
+  height: 50px;
+  background-color: #18b9af;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.menu-icon {
+  display: flex;
+  cursor: pointer;
+}
+.burger-icon {
+  fill: #ffffff;
+  font-size: 20px;
+  line-height: 1;
+}
+.burger-menu:hover {
+  background-color: black;
+}
+/*--------------Mobile menu-------------*/
+.tronix-menu-wrapper.tronix-body-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.tronix-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #24231dc4;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.8s;
+}
+
+/*---------------Footer-------------*/
 .page-footer {
   max-width: 420px;
   margin: 0 auto;
@@ -132,6 +199,7 @@ body {
 }
 .container-posts {
   margin-bottom: 30px;
+  position: relative;
 }
 .posts {
   display: flex;
@@ -168,16 +236,11 @@ body {
 .span-white-link {
   color: var(--white-color);
 }
-.current {
-  position: relative;
-  /* color: #ffffff; */
-}
-.current::before {
+.fa-calendar-alt:before {
   content: "\f073";
-  border-radius: 2px;
-  position: absolute;
-  left: -20px;
+  margin-right: 8px;
 }
+
 .footer-one-copyright_area {
   width: 100%;
 }
