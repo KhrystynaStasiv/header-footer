@@ -524,6 +524,32 @@ body {
   left: 0;
   right: 0;
 }
+.to-top {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 100;
+  font-size: 25px;
+  opacity: 1;
+  visibility: visible;
+  background: #18b9af;
+}
+.arrow {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (min-width: 576px) {
   .page-footer {
     max-width: 576px;
