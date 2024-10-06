@@ -10,6 +10,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -46,9 +50,43 @@
                     id="menu-item-1311"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311 no-mega tronix-item-has-children"
                   >
-                    <a href="#" class="mobile-menu-link sub-menu-opener"
-                      >Service</a
-                    >
+                    <a href="#" class="mobile-menu-link sub-menu-opener">Service</a>
+                   <ul id="submenu" class="sub-menu tronix-submenu">
+                        <li
+                          id="menu-item-972"
+                          class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-972"
+                        >
+                          <a class="mobile-menu-link"
+                            href="https://infrajump.com/cloud-migration-services/"
+                            >Cloud Migration</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-1349"
+                          class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"
+                        >
+                          <a class="mobile-menu-link" href="https://infrajump.com/devops-as-a-service/"
+                            >DevOps as a Service</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-1350"
+                          class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1350"
+                        >
+                          <a class="mobile-menu-link"
+                            href="https://infrajump.com/infrastructure-as-code/"
+                            >Infrastructure as Code</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-1351"
+                          class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"
+                        >
+                          <a class="mobile-menu-link" href="https://infrajump.com/ci-cd-implementation/"
+                            >CI/CD Implementation</a
+                          >
+                        </li>
+                      </ul>
                   </li>
                   <li
                     id="menu-item-5457"
@@ -104,7 +142,7 @@
             </div>
             </div>
          
-          <div class="mobile-menu is-open">
+          <div class="mobile-menu isopen">
             <div class="tronix-menu-wrapper is-hidden" data-modal>
               <div class="tronix-menu-area text-center">
                 <button class="tronix-menu-toggle" data-modal-close>
@@ -165,20 +203,17 @@
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311 no-mega tronix-item-has-children"
                     >
                       <a href="#" class="mobile-menu-link menu-plus-expand"
-                        >Services<span class="tronix-mean-expand">
-                          <svg class="icon-plus">
-                            <use
-                              href="./symbol-defs.svg#icon-plus"
-                            ></use></svg></span
-                      ></a>
+                        >Services</a>
+                        <button type="button" id="open-submenu-btn" class="tronix-mean-expand">
+                          <span class="icon-plus"></span></button>
 
-                      <ul class="sub-menu tronix-submenu is-hidden">
-                        >
+                      <ul id="submenu" class="sub-menu tronix-submenu">
+                        
                         <li
                           id="menu-item-972"
                           class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-972"
                         >
-                          <a
+                          <a class="mobile-menu-link"
                             href="https://infrajump.com/cloud-migration-services/"
                             >Cloud Migration</a
                           >
@@ -187,7 +222,7 @@
                           id="menu-item-1349"
                           class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"
                         >
-                          <a href="https://infrajump.com/devops-as-a-service/"
+                          <a class="mobile-menu-link" href="https://infrajump.com/devops-as-a-service/"
                             >DevOps as a Service</a
                           >
                         </li>
@@ -195,7 +230,7 @@
                           id="menu-item-1350"
                           class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1350"
                         >
-                          <a
+                          <a class="mobile-menu-link"
                             href="https://infrajump.com/infrastructure-as-code/"
                             >Infrastructure as Code</a
                           >
@@ -204,7 +239,7 @@
                           id="menu-item-1351"
                           class="sub-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"
                         >
-                          <a href="https://infrajump.com/ci-cd-implementation/"
+                          <a class="mobile-menu-link" href="https://infrajump.com/ci-cd-implementation/"
                             >CI/CD Implementation</a
                           >
                         </li>
@@ -251,16 +286,11 @@
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311 no-mega"
                     >
                       <a href="#">Services</a>
-                      <ul class="sub-menu">
+                      <ul class="sub-menu" id="submenu">
                         <li
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"
                         >
-                          #18B9AF;
-
-                          <a
-                            href="https://infrajump.com/cloud-migration-services/"
-                            >Cloud Migration</a
-                          >
+                          <a href="https://infrajump.com/cloud-migration-services/">Cloud Migration</a>
                         </li>
                         <li
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"
@@ -509,6 +539,7 @@
             </div>
           </div>
         </div>
+        
       </div>
       <div class="to-top" id="back-top">
         <svg class="arrow"><use href="./symbol-defs.svg#icon-arrow-up2"></use></svg>

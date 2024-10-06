@@ -171,6 +171,7 @@ body {
 .menu-item {
   border-bottom: 1px solid black;
   list-style-type: none;
+  position: relative;
 }
 .menu-item:last-child {
   border-bottom: none;
@@ -189,6 +190,9 @@ body {
   justify-content: space-between;
 }
 .tronix-mean-expand {
+  position: absolute;
+  right: 20px;
+  top: 10px;
   font-weight: 400;
   font-size: 12px;
   width: 25px;
@@ -201,15 +205,25 @@ body {
   border-radius: 50%;
   margin-right: 0;
   cursor: pointer;
+  border: none;
 }
 .icon-plus {
   width: 12px;
   height: 12px;
   fill: white;
+  font-size: 20px;
 }
-/* .tronix-submenu {
-  overflow-y: scroll;
-} */
+/* Hidden submenu */
+.sub-menu {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: none;
+}
+/* When submenu is visible */
+.sub-menu.active {
+  display: block;
+}
 .sub-menu-item {
   padding-left: 10px;
 }
@@ -236,7 +250,10 @@ body {
     opacity: 0;
     visibility: hidden;
   }
-  .mobile-menu {
+  /* .mobile-menu {
+    display: none;
+  } */
+  .header-button {
     display: none;
   }
   .search-open {
@@ -268,14 +285,14 @@ body {
     display: flex;
   }
   .tronix-mobile-menu {
-    width: 316px;
+    /* width: 316px; */
     display: flex;
     flex-direction: row;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0;
     margin-top: 0;
-    gap: 36px;
+    /* gap: 36px; */
   }
   .menu-item {
     border-bottom: none;
@@ -283,29 +300,41 @@ body {
     flex-direction: row;
     padding: 40px 0;
   }
-  .sub-menu-opener {
-    position: relative;
-  }
-  .sub-menu-opener:after {
-    content: "\f078";
+  .sub-menu {
+    width: 204px;
+    height: 242px;
     position: absolute;
+    text-align: center;
+    left: -27px;
+    transform: scaleY(1);
+    z-index: 9;
+    background-color: white;
+  }
+  .mobile-menu-link {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 15px 20px;
+  }
+  .mobile-menu-link:hover,
+  .fa-chevron-down:hover {
+    color: #18b9af;
+  }
+  .sub-menu-opener::after {
+    content: "\f078";
+    position: relative;
     margin-left: 1px;
-    bottom: 12px;
-    display: inline-block;
+    top: 1px;
+    font-style: normal;
     transition: 0.4s;
     transform: rotate(0);
     font-size: 12px;
     font-family: "font awesome 5 free";
     font-weight: 800;
   }
-  .mobile-menu-link {
-    font-weight: 600;
-  }
-  .mobile-menu-link:hover {
-    color: #18b9af;
-  }
   .menu-plus-expand {
-    visibility: hidden;
+    display: none;
   }
   .search-btn-container {
     display: block;
@@ -533,10 +562,8 @@ body {
   position: fixed;
   right: 50px;
   bottom: 30px;
-  opacity: 0;
   visibility: hidden;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 100;
   font-size: 25px;
